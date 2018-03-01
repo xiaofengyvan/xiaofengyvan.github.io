@@ -16,7 +16,7 @@
 <meta property="og:description" content="搭建博客的初衷为什么要搭建自己的个人博客？第一：为了炫耀罢了，“如果人生不是用来装逼，那将毫无意义！”；第二：为了激励自己更好的学习；第三：为了给想要搭建博客的朋友们，指引些方向。 操作系统信息OS release：CentOS release 6.7 (Final);Linux version：2.6.32-573.el6.x86_64. 部署安装 Git：1sudo yum install g">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://superyvan.com/images/592767546.png">
-<meta property="og:updated_time" content="2018-03-01T14:16:24.215Z">
+<meta property="og:updated_time" content="2018-03-01T14:18:34.325Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客搭建之路">
 <meta name="twitter:description" content="搭建博客的初衷为什么要搭建自己的个人博客？第一：为了炫耀罢了，“如果人生不是用来装逼，那将毫无意义！”；第二：为了激励自己更好的学习；第三：为了给想要搭建博客的朋友们，指引些方向。 操作系统信息OS release：CentOS release 6.7 (Final);Linux version：2.6.32-573.el6.x86_64. 部署安装 Git：1sudo yum install g">
@@ -206,7 +206,7 @@
 <p>如果是下面的反馈：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host <span class="string">'GitHub.com (207.97.227.239)'</span> can<span class="string">'t be established. RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48. Are you sure you want to continue connecting (yes/no)?</span></span><br></pre></td></tr></table></figure></p>
 <p>不要紧张，输入 yes 就好，然后会看到：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi cnfeat! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure></p>
 <p><strong> 设置用户信息 </strong><br>现在你已经可以通过 SSH 链接到 GitHub 了，还有一些个人信息需要完善的。</p>
-<p>Git 会根据用户的名字和邮箱来记录提交。GitHub 也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的，名字必须是你的真名，而不是GitHub的昵称。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"xiaofengyvan"</span>//用户名</span><br><span class="line">git config --global user.email  <span class="string">"xiaofengyvan@gmail.com"</span>//填写自己的邮箱</span><br></pre></td></tr></table></figure></p>
+<p>Git 会根据用户的名字和邮箱来记录提交。GitHub 也是用这些信息来做权限的处理，输入下面的代码进行个人信息的设置，把名称和邮箱替换成你自己的，名字必须是你的真名，而不是GitHub的昵称。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"Yvan"</span>//用户名</span><br><span class="line">git config --global user.email  <span class="string">"xiaofengyvan@gmail.com"</span>//填写自己的邮箱</span><br></pre></td></tr></table></figure></p>
 <p><strong> SSH Key 配置成功 </strong><br>本机已成功连接到 GitHub！！！</p>
 <h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js:"></a>安装 Node.js:</h3><p><strong>（建议下载官网上的二进制包进行部署；博主一开始采用源码部署，由于centos 6.7的缘故，默认安装的g++版本较低，故需要重新下载，然而部署g++中亦有很多未知的坑，故果断放弃，所以推荐下载已封装好的二进制包进行部署，可以省很多时间去解决依赖的问题）</strong></p>
 <p>下载地址：<a href="https://nodejs.org/en/download/；" target="_blank" rel="noopener">https://nodejs.org/en/download/；</a><br>下载 Linux Binaries (x64) : <a href="https://nodejs.org/dist/v8.9.4/node-v8.9.4-linux-x64.tar.xz" target="_blank" rel="noopener">https://nodejs.org/dist/v8.9.4/node-v8.9.4-linux-x64.tar.xz</a></p>
